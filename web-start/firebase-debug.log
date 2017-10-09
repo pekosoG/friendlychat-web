@@ -1,0 +1,62 @@
+[debug] [2017-10-09T13:58:17.733Z] ----------------------------------------------------------------------
+[debug] [2017-10-09T13:58:17.736Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2017-10-09T13:58:17.736Z] CLI Version:   3.13.1
+[debug] [2017-10-09T13:58:17.736Z] Platform:      darwin
+[debug] [2017-10-09T13:58:17.736Z] Node Version:  v6.9.1
+[debug] [2017-10-09T13:58:17.737Z] Time:          Mon Oct 09 2017 08:58:17 GMT-0500 (CDT)
+[debug] [2017-10-09T13:58:17.737Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-09T13:58:17.754Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-09T13:58:17.754Z] > authorizing via signed-in user
+[debug] [2017-10-09T13:58:17.757Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-09T13:58:17.757Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/X3tcTYd7Dot9k_FBhlq9oVUgkfFfHKlXk-5EkdauBvg',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Oct 09 2017 08:58:17 GMT-0500 (CDT)
+[debug] [2017-10-09T13:58:18.964Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-09T13:58:18.967Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/chat-o-9c442  
+ Mon Oct 09 2017 08:58:18 GMT-0500 (CDT)
+[debug] [2017-10-09T13:58:19.675Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-09T13:58:19.676Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/chat-o-9c442/tokens  
+ Mon Oct 09 2017 08:58:19 GMT-0500 (CDT)
+[debug] [2017-10-09T13:58:20.758Z] <<< HTTP RESPONSE 200
+[info] 2
+[info] 
+[info] === Deploying to 'chat-o-9c442'...
+[info] 
+[info] i  deploying functions, hosting
+[debug] [2017-10-09T13:58:21.416Z] > [functions] package.json contents: {
+  "name": "friendlychat-codelab",
+  "description": "Firebase SDK for Cloud Functions codelab",
+  "dependencies": {
+    "firebase-admin": "^4.1.1",
+    "firebase-functions": "^0.5.1"
+  }
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] [2017-10-09T13:58:21.418Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/chat-o-9c442?view=CONSUMER_VIEW  
+ Mon Oct 09 2017 08:58:21 GMT-0500 (CDT)
+[debug] [2017-10-09T13:58:21.418Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/chat-o-9c442?view=CONSUMER_VIEW  
+ Mon Oct 09 2017 08:58:21 GMT-0500 (CDT)
+[debug] [2017-10-09T13:58:22.366Z] <<< HTTP RESPONSE 200
+[info] ✔  runtimeconfig: all necessary APIs are enabled
+[debug] [2017-10-09T13:58:22.589Z] <<< HTTP RESPONSE 200
+[warn] ⚠  functions: missing necessary APIs. Enabling now...
+[debug] [2017-10-09T13:58:22.591Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/chat-o-9c442?updateMask=usageSettings { usageSettings: { consumerEnableStatus: 'ENABLED' } } 
+ Mon Oct 09 2017 08:58:22 GMT-0500 (CDT)
+[debug] [2017-10-09T13:58:23.809Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-09T13:58:33.814Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/chat-o-9c442?view=CONSUMER_VIEW  
+ Mon Oct 09 2017 08:58:33 GMT-0500 (CDT)
+[debug] [2017-10-09T13:58:34.162Z] <<< HTTP RESPONSE 200
+[info] i  functions: waiting for APIs to activate...
+[debug] [2017-10-09T13:58:44.168Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/chat-o-9c442?view=CONSUMER_VIEW  
+ Mon Oct 09 2017 08:58:44 GMT-0500 (CDT)
+[debug] [2017-10-09T13:58:44.907Z] <<< HTTP RESPONSE 200
+[info] i  functions: waiting for APIs to activate...
+[debug] [2017-10-09T13:58:54.914Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/chat-o-9c442?view=CONSUMER_VIEW  
+ Mon Oct 09 2017 08:58:54 GMT-0500 (CDT)
+[debug] [2017-10-09T13:58:55.713Z] <<< HTTP RESPONSE 200
+[info] i  functions: waiting for APIs to activate...
